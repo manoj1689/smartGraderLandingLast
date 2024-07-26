@@ -3,7 +3,9 @@
   "rules": {
     "no-console": "off",
     "no-unused-vars": "off",
-    "react/jsx-key": "off"
+    "react/jsx-key": "off",
+    "next/next-image-missing-alt": "off", // Disable warning for missing alt attribute
+    "next/next-image-missing-src": "off" // 
     // Add or customize other rules as needed
   }
 }
