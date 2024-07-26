@@ -552,7 +552,7 @@ const Testimonials = () => {
         </div>
         <Slider {...settings} className="testimonial-slider  ">
           {testimonials.map((testimonial, index) => (
-            <div className="flex flex-col gap-[20%] h-min">
+            <div key={testimonial.id} className="flex flex-col gap-[20%] h-min">
               <motion.div
                 key={index}
                 className="testimonial-card flex flex-col justify-between m-4 px-6 text-center p-6 bg-white shadow-lg rounded-lg border border-gray-200 transition duration-300 transform hover:scale-105 h-[450px] "
