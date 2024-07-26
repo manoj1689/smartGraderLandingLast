@@ -6,7 +6,7 @@ let chain: RetrievalQAChain | null = null;
 // Fetch the existing chain from the initialized state
 async function fetchChain(): Promise<RetrievalQAChain> {
   if (!chain) {
-    const res = await fetch('http://localhost:3000/src/app/api/load-chain');
+    const res = await fetch('http://localhost:3000/api/load-chain');
     const data = await res.json();
     if (data.success) {
       // Assuming the chain object is being returned in the response
@@ -21,7 +21,6 @@ async function fetchChain(): Promise<RetrievalQAChain> {
   }
   return chain;
 }
-
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
