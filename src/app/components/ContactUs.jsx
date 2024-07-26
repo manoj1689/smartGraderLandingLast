@@ -54,6 +54,7 @@ const ContactUs = ({ open, onClose }) => {
             </h2>
             <div>
               <img
+              alt=""
                 loading="lazy"
                 src="/images/home/ThanksMsg.jpg"
                 className="mt-1.5 "

@@ -56,6 +56,7 @@ const JobSeekersSection = () => {
           </h2>
           <div className="flex w-full md:mx-auto px-4 justify-center lg:justify-end">
             <img
+            alt=""
               loading="lazy"
               src="/images/home/HomeLine.png"
               className="mt-1.5 max-w-full aspect-[14.29] w-[307px]"

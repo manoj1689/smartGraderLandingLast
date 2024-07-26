@@ -19,6 +19,7 @@ const Hero = () => {
               Cultivate Confidence.<br/> Ace Interviews & Assessment.
             </div>
             <img
+            alt=""
               loading="lazy"
               src="/images/home/HomeLine.png"
               className="mt-1.5 max-w-full aspect-[14.29] w-[307px]"
