@@ -9,8 +9,8 @@ export default async function handler(req, res) {
        // console.log(req.body);
 
         // Email account credentials
-        const emailAddress = process.env.SMTP_USER;
-        const emailPassword = process.env.SMTP_PASS;
+        // const emailAddress = process.env.SMTP_USER;
+        // const emailPassword = process.env.SMTP_PASS;
 
         // Email server details
         const smtpServer = 'smtpout.secureserver.net';
