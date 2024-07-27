@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { AppProps } from "next/app";
 import Navbar from "../app/components/Navbar";
-import Blog from "../app/components/Blog";
+import Blog from "../app/blog/page";
 import HomePage from "./home/page";
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
