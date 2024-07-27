@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
@@ -23,12 +23,15 @@ async function initializeChain() {
 
     const splittedDocs = await splitter.splitDocuments(docs);
 
-    const embeddings = new OpenAIEmbeddings();
+    const embeddings = new OpenAIEmbeddings({
+      openAIApiKey: process.env.OPENAI_API_KEY,
+    });
     const vectorStore = await HNSWLib.fromDocuments(splittedDocs, embeddings);
 
     const vectorStoreRetriever = vectorStore.asRetriever();
     const model = new LangchainOpenAI({
-      modelName: 'gpt-3.5-turbo'
+      openAIApiKey: process.env.OPENAI_API_KEY,
+      modelName: 'gpt-3.5-turbo',
     });
 
     chain = RetrievalQAChain.fromLLM(model, vectorStoreRetriever);
@@ -36,19 +39,13 @@ async function initializeChain() {
   return chain;
 }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'GET') {
-    try {
-      await initializeChain();
-      res.status(200).json({ success: true });
-    } catch (error) {
-      // Assert that the error is of type Error
-      const err = error as Error;
-      console.error("Error initializing chain:", err);
-      res.status(500).json({ success: false, error: err.message });
-    }
-  } else {
-    res.setHeader('Allow', ['GET']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+export async function GET(req: NextRequest) {
+  try {
+    await initializeChain();
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    const err = error as Error;
+    console.error("Error initializing chain:", err);
+    return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }
 }

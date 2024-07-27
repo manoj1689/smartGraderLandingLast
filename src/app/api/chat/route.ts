@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-//@ts-ignore
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 import OpenAI from 'openai';
 
@@ -67,6 +66,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
+
 
 
 
