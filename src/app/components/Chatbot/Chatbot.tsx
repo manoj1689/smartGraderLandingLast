@@ -110,7 +110,7 @@ const Chatbot = () => {
       </button>
 
       {isChatOpen && (
-       <div className="fixed bottom-[90px] z-50 right-1 sm:right-4 md:right-8 max-sm:w-80 max-h-[calc(100vh-120px)] h-96 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col overflow-hidden">
+       <div className="fixed  bottom-[90px] xs:bottom-[10px] md:bottom-[90px] z-50 right-4 xs:right-32 md:right-8 max-sm:w-80  max-sm:max-h-[calc(100vh-60px)] sm:max-h-[calc(100vh-80px)]  md:max-h-[calc(100vh-120px)] h-96 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col overflow-hidden">
        <div className="flex justify-between items-center p-3 bg-blue-500 text-white rounded-t-lg">
          <h4 className="text-lg font-bold">Chat with SmartGrader</h4>
        </div>

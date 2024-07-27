@@ -47,6 +47,9 @@ const config: Config = {
       scale: {
         '115': '1.15',
       },
+      screens: {
+        'xs': '480px', // Custom breakpoint
+      },
     },
     variants: {
       extend: {
