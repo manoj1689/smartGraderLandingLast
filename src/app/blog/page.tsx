@@ -21,8 +21,9 @@ function Blog() {
     <>
       <Navbar />
       <div className="container mt-32 md:mt-20 mx-auto">
-        <Chatbot/>
+       
         <section className="bg-white">
+        <Chatbot/>
           <motion.div
             className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
             initial={{ opacity: 0, y: 50 }}
