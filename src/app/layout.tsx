@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SmartGrader Chat-Bot",
-  description: "Made by Devanshu Kumar",
+  title: "SmartGrader Landing Page",
+  description: "Made by SmartGrader Team",
 };
 
 export default function RootLayout({
