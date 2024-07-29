@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 const Subscribe = () => {
   return (
-    <section id="subscribe" className="bg-sky-50 py-20">
+    <section id="subscribe" className="bg-sky-50 mb-16">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-medium font-spline text-[#2B383D] mb-2">
+          <h2 className="text-3xl md:text-4xl font-medium font-spline text-[#2B383D]">
             Subscribe to Our Newsletter
           </h2>
-          <p className="text-lg mb-12 font-spline text-gray-700">
+          <p className="text-lg py-4 font-spline text-gray-700">
             Get new offers and updates directly in your inbox.
           </p>
         </motion.div>

@@ -29,7 +29,7 @@ const Navbar = () => {
             <span>Welcome to Smart Grader!</span>
             <span className="flex gap-3">
               <span>info@smartgrader.in</span>
-              <span>+91-8287046917</span>
+              <span>+91-8920964502</span>
             </span>
           </div>
         </div>

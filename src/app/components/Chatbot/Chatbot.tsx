@@ -103,7 +103,7 @@ const Chatbot = () => {
     <div>
       <button
         onClick={toggleChat}
-        className="fixed bottom-6 right-10 bg-blue-500 text-white p-4 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-115 flex items-center justify-center"
+        className="fixed bottom-6 right-10 bg-blue-500 text-white p-4 z-50 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-115 flex items-center justify-center"
         aria-label={isChatOpen ? "Close chat" : "Open chat"}
       >
         {isChatOpen ? <CloseIcon /> : <MessageIcon />}
