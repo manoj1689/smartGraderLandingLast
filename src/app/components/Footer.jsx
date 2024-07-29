@@ -152,7 +152,7 @@ const Footer = () => {
               <div className=" flex flex-row md:flex-col   ">
                 <div className="flex w-1/2 sm:full flex-col mb-8">
                   <span className="text-lg font-semibold font-spline text-white">
-                    LET'S TALK
+                    LET&#39;S TALK
                   </span>
                   <p className="font-spline text-gray-400 ">
                    {companyPhoneNumber}
