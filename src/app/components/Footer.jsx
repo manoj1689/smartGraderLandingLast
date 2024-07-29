@@ -190,9 +190,9 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col justify-between  mb-2">
-          <div className="w-full  pt-2 ">
+          <div className="w-full  pt-2">
             <div className="border-t border-slate-600 flex justify-center pt-2">
-              <p className="text-sm font-light text-gray-400 leading-5">
+              <p className="text-sm font-light text-gray-500 leading-5">
                 © 2024 Smart Graders. All Rights Reserved.
               </p>
             </div>
