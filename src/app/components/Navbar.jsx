@@ -95,17 +95,17 @@ const Navbar = () => {
             <div
               onClick={() =>
                 (window.location.href =
-                  "http://smart-grader-app-ts.vercel.app/signIn")
+                  "http://app.smartgrader.in/signIn")
               }
             >
-              <span className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 flex items-center cursor-pointer">
-                <FaSignInAlt className="mr-2" /> Login
+              <span className="text-sky-500 hover:text-blue-700 font-spline transition duration-300 flex items-center cursor-pointer">
+                <FaSignInAlt className="mr-2" /> sign In
               </span>
             </div>
             <div
               onClick={() =>
                 (window.location.href =
-                  "http://smart-grader-app-ts.vercel.app/createAccount")
+                  "http://app.smartgrader.in/createAccount")
               }
             >
               <span className="bg-[#01AFF4] text-white px-4 py-2 font-spline rounded hover:bg-blue-500 transition duration-300 flex items-center cursor-pointer">

@@ -28,7 +28,7 @@ const InstitutionsSection = () => {
     // Perform any logout logic here, e.g., clearing authentication tokens, etc.
 
     // Construct the URL with query parameters
-    const url = new URL("http://smart-grader-app-ts.vercel.app/signUp");
+    const url = new URL("http://app.smartgrader.in/signUp");
     url.searchParams.append("userType", "educational");
 
     // Redirect to the URL with parameters

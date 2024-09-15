@@ -35,7 +35,7 @@ const Hero = () => {
           </motion.p>
           <div className="flex w-full ">
       <span 
-        onClick={() => window.location.href = 'https://smart-grader-app-ts.vercel.app/'}
+        onClick={() => window.location.href = 'https://app.smartgrader.in/'}
         className="bg-[#01AFF4] text-white px-4 sm:px-6 py-3 mt-6 mb-10 font-spline text-md rounded hover:bg-blue-500 transition duration-300 flex items-center  cursor-pointer "
       >
         Get Started with SmartGrader <FaArrowRight className="ml-4" />

@@ -58,13 +58,13 @@ const Footer = () => {
                     USEFUL LINKS
                   </span>
                   <div className="flex flex-col gap-2">
-                    <span className="self-start text-gray-400 font-extralight font-spline">
+                    <span className="self-start text-gray-400  font-spline">
                       Help & Support
                     </span>
-                    <span className="self-start text-gray-400 font-extralight font-spline">
+                    <span className="self-start text-gray-400  font-spline">
                       Blog
                     </span>
-                    <span className="self-start text-gray-400 font-extralight font-spline">
+                    <span className="self-start text-gray-400  font-spline">
                       About Us
                     </span>
                   </div>

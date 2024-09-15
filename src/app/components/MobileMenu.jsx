@@ -67,7 +67,7 @@ const MobileMenu = () => {
                   className="bg-white border border-sky-500 w-11/12 sm:w-7/12 my-3 text-sky-500 hover:bg-white hover:text-white font-medium font-spline py-2 px-4 rounded transition duration-300 ease-in-out"
                   onClick={() =>
                     (window.location.href =
-                      "http://smart-grader-app-ts.vercel.app/signIn")
+                      "http://app.smartgrader.in/signIn")
                   }
                 >
                   <span className="text-sky-500">Sign In</span>
@@ -80,7 +80,7 @@ const MobileMenu = () => {
                   className="bg-[#01AFF4] hover:bg-blue-500 text-white font-medium font-spline py-2 px-4 w-11/12 sm:w-7/12 my-3 rounded transition duration-300 ease-in-out"
                   onClick={() =>
                     (window.location.href =
-                      "http://smart-grader-app-ts.vercel.app/createAccount")
+                      "http://app.smartgrader.in/createAccount")
                   }
                 >
                   <span>Sign Up</span>
