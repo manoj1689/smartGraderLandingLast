@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import assistant from "../../../../public/images/chatbot/assistant.png";
 import user from "../../../../public/images/chatbot/user.png";
