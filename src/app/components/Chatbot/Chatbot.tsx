@@ -82,9 +82,11 @@ const Chatbot = () => {
   // Update input based on speech recognition results
   useEffect(() => {
     if (results.length > 0) {
-      // Get the latest transcript and set it as input
-      const latestTranscript = results[results.length - 1].transcript;
-      setInput(latestTranscript);
+      // Ensure results are of type `ResultType` before accessing the `transcript`
+      const latestResult = results[results.length - 1];
+      if (typeof latestResult === "object" && "transcript" in latestResult) {
+        setInput(latestResult.transcript);
+      }
     }
   }, [results, setInput]);
 
