@@ -18,15 +18,8 @@ const config: Config = {
         'drak-text-heading': '#333333',
         'background-light-blue': '#f8f9fa',
       },
-      fontFamily: {
-        "h2-text-heading": "var(--h2-text-heading-font-family)",
-        "h4-16px-sub-heading": "var(--h4-16px-sub-heading-font-family)",
-        "medium-heading-blue": "var(--medium-heading-blue-font-family)",
-        "paragraph-text": "var(--paragraph-text-font-family)",
-        "small-heading-h6": "var(--small-heading-h6-font-family)",
-        "sub-heading": "var(--sub-heading-font-family)",
-        'spline': ['"Spline Sans"', 'sans-serif'],
-      },
+   
+      
       boxShadow: {
         shadow: "var(--shadow)",
       },

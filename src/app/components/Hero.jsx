@@ -15,9 +15,11 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="relative flex-col items-center"
           >
-            <div className="w-full text-6xl font-spline font-medium text-slate-800 max-md:max-w-full max-xl:text-5xl">
-              Cultivate Confidence.<br/> Ace Interviews & Assessment.
-            </div>
+           <div className="w-full text-5xl font-semibold text-slate-800 max-md:max-w-full max-xl:text-5xl">
+           Confidently Thrive in
+           Interviews & Assessments with AI.
+</div>
+
             <img
             alt=""
               loading="lazy"
@@ -29,14 +31,14 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-3 w-full text-lg  max-xl:text-sm leading-6  font-spline font-thin text-neutral-600 max-md:max-w-full"
+            className="mt-3 w-full text-lg  max-xl:text-sm leading-6  font-light text-gray-600 max-md:max-w-full"
           >
             Gain confidence and improve performance with precise feedback. Our platform leverages advanced technology to enhance interview and evaluation processes. Prepare smarter and excel with our AI-powered assessment solutions.
           </motion.p>
           <div className="flex w-full ">
       <span 
         onClick={() => window.location.href = 'https://app.smartgrader.in/'}
-        className="bg-[#01AFF4] text-white px-4 sm:px-6 py-3 mt-6 mb-10 font-spline text-md rounded hover:bg-blue-500 transition duration-300 flex items-center  cursor-pointer "
+        className="bg-[#01AFF4] text-white px-4 sm:px-6 py-3 mt-6 mb-10  text-md rounded shadow-2xl hover:scale-105 hover:bg-blue-500 transition duration-300 flex items-center  cursor-pointer "
       >
         Get Started with SmartGrader <FaArrowRight className="ml-4" />
       </span>

@@ -1,3 +1,4 @@
+import 'regenerator-runtime/runtime';
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
@@ -12,7 +13,7 @@ import IntroVideo from "../components/IntroVideo";
 import Chatbot from "../components/Chatbot/Chatbot";
 export default function HomePage() {
   return (
-    <div className="w-full bg-[#F6F9FC]">
+    <div className="w-full bg-white">
 <Navbar/>
       <div className="container mx-auto mt-20 ">
         <Hero />
@@ -27,10 +28,10 @@ export default function HomePage() {
         <Testimonials />
       </div>
 
-      <div className="w-full bg-gray-100">
+      <div className="w-full">
         <Subscribe />
       </div>
-      <div className="w-full bg-gray-900 text-white">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

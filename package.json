@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.4",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@headlessui/react": "^2.0.4",
@@ -33,6 +34,7 @@
     "razorpay": "^2.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-speech-to-text": "^0.8.0",
     "react-hover-video-player": "^10.0.1",
     "react-icons": "^5.2.1",
     "react-modal": "^3.16.1",
@@ -42,7 +44,9 @@
     "react-router-dom": "^6.23.1",
     "react-select": "^5.8.0",
     "react-slick": "^0.30.2",
+
     "react-toastify": "^10.0.5",
+
     "sharp": "^0.33.4",
     "slick-carousel": "^1.8.1",
     "video-react": "^0.16.0"
@@ -52,6 +56,8 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-slick": "^0.23.13",
+    "@types/react-speech-recognition": "^3.9.5",
+    "@types/regenerator-runtime": "^0.13.7",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
     "postcss": "^8.4.39",

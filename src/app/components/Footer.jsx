@@ -20,8 +20,8 @@ const Footer = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3 }
-    }
+      transition: { staggerChildren: 0.3 },
+    },
   };
 
   const sectionVariants = (direction) => ({
@@ -34,12 +34,12 @@ const Footer = () => {
       opacity: 1,
       y: 0,
       x: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   });
 
   return (
-    <footer className="bg-[#002D62] py-4 text-white">
+    <footer className="bg-gray-900 py-6 text-white">
       <motion.div
         className="container mx-auto px-4 w-full"
         initial="hidden"
@@ -48,35 +48,31 @@ const Footer = () => {
       >
         <div className="flex flex-col lg:flex-row">
           <motion.div
-            className="w-full lg:w-1/2 order-2 flex flex-col md:flex-row lg:order-1"
+            className="w-full lg:w-1/2 flex flex-col md:flex-row "
             variants={sectionVariants("left")}
           >
             <div className="flex flex-col p-2 w-full">
               <div className="flex flex-row md:flex-col gap-5">
                 <div className="flex w-1/2 md:w-full flex-col">
-                  <span className="text-lg font-semibold font-spline text-white">
+                  <span className="text-lg font-semibold text-gray-300">
                     USEFUL LINKS
                   </span>
                   <div className="flex flex-col gap-2">
-                    <span className="self-start text-gray-400  font-spline">
+                    <span className="self-start text-gray-400">
                       Help & Support
                     </span>
-                    <span className="self-start text-gray-400  font-spline">
-                      Blog
-                    </span>
-                    <span className="self-start text-gray-400  font-spline">
-                      About Us
-                    </span>
+                    <span className="self-start text-gray-400">Blog</span>
+                    <span className="self-start text-gray-400">About Us</span>
                   </div>
                 </div>
                 <div className="flex w-1/2 md:w-full flex-col mb-8">
-                  <span className="text-lg font-semibold text-white font-spline">
+                  <span className="text-lg font-semibold text-gray-300">
                     EMAIL US
                   </span>
                   <span>
                     <a
                       href={`mailto:${companyEmail}`}
-                      className="text-gray-400 hover:text-gray-200 font-spline transition duration-300"
+                      className="text-gray-400 hover:text-gray-200 transition duration-300"
                     >
                       {companyEmail}
                     </a>
@@ -84,125 +80,31 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div></div>
-            <div className="mb-4 md:mb-0 w-full flex flex-col p-2">
-              <div className="flex w-full">
-                <span className="text-lg font-semibold font-spline text-white">
-                  SOCIAL CONTACTS
-                </span>
-              </div>
-              <div className="h-full flex flex-row items-start pt-4">
-                <div className="flex w-full">
-                  <div className="flex flex-col w-1/3 gap-3">
-                    <div>
-                      <a
-                        href="https://www.facebook.com/pages/creation/?ref_type=comet_home"
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/facebook.png"
-                          alt="facebook Logo"
-                          className="cursor-pointer w-12"
-                        />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://www.youtube.com/channel/UCftfkcIZ12QjtOarvNepG8g"
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/youtube.png"
-                          alt="youtube Logo"
-                          className="cursor-pointer w-16"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-1/3 justify-center items-start gap-5">
-                    <div>
-                      <a
-                        href={`mailto:${companyEmail}`}
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/gmail.png"
-                          alt="gmail Logo"
-                          className="cursor-pointer w-12"
-                        />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://www.instagram.com/smart_grader/"
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/instagram.png"
-                          alt="instagram Logo"
-                          className="cursor-pointer w-12"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-1/3 gap-5">
-                    <div>
-                      <a
-                        href="https://www.linkedin.com/in/smart-grader-a36536311/"
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/linkedin.png"
-                          alt="linkedin Logo"
-                          className="cursor-pointer w-12"
-                        />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://x.com/smart_grader"
-                        className="text-white hover:text-sky-500 transition duration-300"
-                      >
-                        <img
-                          src="images/social/X.png"
-                          alt="X Logo"
-                          className="cursor-pointer w-16"
-                        />
-                      </a>
-                    </div>
-                  </div>
+            <div className="w-full flex flex-col p-2">
+              <div className="flex flex-row md:flex-col">
+                <div className="flex w-1/2 sm:full flex-col mb-8">
+                  <span className="text-lg font-semibold text-gray-300">
+                    LET&apos;S TALK
+                  </span>
+                  <p className="text-gray-400">{companyPhoneNumber}</p>
+                </div>
+                <div className="flex w-1/2 md:full flex-col mb-8">
+                  <span className="text-lg font-semibold text-gray-300 mb-2">
+                    WRITE TO US
+                  </span>
+                  <span>
+                    <p className="text-gray-400">{companyAddress}</p>
+                  </span>
                 </div>
               </div>
             </div>
           </motion.div>
           <motion.div
-            className="w-full lg:w-1/2 flex flex-col md:flex-row order-1 lg:order-2"
+            className="w-full lg:w-1/2  flex flex-col "
             variants={sectionVariants("right")}
           >
-            <div className="w-full flex flex-col p-2">
-              <div className="flex flex-row md:flex-col">
-                <div className="flex w-1/2 sm:full flex-col mb-8">
-                  <span className="text-lg font-semibold font-spline text-white">
-                    LET&apos;S TALK
-                  </span>
-                  <p className="font-spline text-gray-400">
-                    {companyPhoneNumber}
-                  </p>
-                </div>
-                <div className="flex w-1/2 md:full flex-col mb-8">
-                  <span className="text-lg font-semibold text-white font-spline mb-2">
-                    WRITE TO US
-                  </span>
-                  <span>
-                    <p className="font-spline text-gray-400">
-                      {companyAddress}
-                    </p>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 w-full">
-              <span className="text-lg font-semibold font-spline text-white">
+            <div className="p-2 ">
+              <span className="text-lg font-semibold text-gray-300">
                 GOOGLE MAP
               </span>
               <iframe
@@ -216,6 +118,46 @@ const Footer = () => {
                 className="rounded-sm pt-2"
               ></iframe>
             </div>
+            <div className="mb-4 md:mb-0 w-full flex flex-col p-2">
+              <div className="h-full flex flex-row items-start pt-4">
+                <div className="flex w-full">
+                  <div className="flex flex-row w-1/2 justify-around gap-3">
+                    <div>
+                      <a href="https://www.facebook.com/pages/creation/?ref_type=comet_home">
+                        <FaFacebookF className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://www.youtube.com/channel/UCftfkcIZ12QjtOarvNepG8g">
+                        <FaYoutube className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href={`mailto:${companyEmail}`}>
+                        <SiGmail className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex flex-row w-1/2 justify-around">
+                    <div>
+                      <a href="https://www.instagram.com/smart_grader/">
+                        <FaInstagram className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://www.linkedin.com/in/smart-grader-a36536311/">
+                        <FaLinkedinIn className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://x.com/smart_grader">
+                        <FaWindowClose className="cursor-pointer w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
         <motion.div
@@ -223,8 +165,8 @@ const Footer = () => {
           variants={sectionVariants("bottom")}
         >
           <div className="w-full pt-2">
-            <div className="border-t border-slate-600 flex justify-center pt-2">
-              <p className="text-sm font-light text-gray-500 leading-5">
+            <div className="border-t border-gray-600 flex justify-center pt-2">
+              <p className="text-sm font-light text-gray-400 leading-5">
                 © 2024 Smart Graders. All Rights Reserved.
               </p>
             </div>

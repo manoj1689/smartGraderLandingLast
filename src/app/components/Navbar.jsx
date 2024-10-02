@@ -8,7 +8,6 @@ import { MdArrowOutward } from "react-icons/md";
 import Demo from "../components/Demo";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
   const [demo, setDemo] = useState(false);
 
@@ -25,7 +24,7 @@ const Navbar = () => {
       <Demo open={demo} onClose={handleClose} />
       <header className="bg-white shadow-md fixed w-full top-0 z-50">
         <div className="bg-[#01AFF4]">
-          <div className="flex flex-col sm:flex-row container mx-auto py-1 font-semibold font-spline text-xs sm:text-sm text-white justify-between items-center">
+          <div className="flex flex-col sm:flex-row container mx-auto py-1 font-semibold text-xs sm:text-sm text-white justify-between items-center">
             <span>Welcome to Smart Grader!</span>
             <span className="flex gap-3">
               <span>info@smartgrader.in</span>
@@ -36,59 +35,57 @@ const Navbar = () => {
         <div className="container mx-auto flex flex-row justify-between items-center p-4">
           <div className="text-lg font-semibold">
             <Link href="/">
-            <span >
-              <img
-  
-                src="images/home/smart-logo1.png"
-                alt="Smart Grader Logo"
-                className="cursor-pointer w-28 md:w-32 lg:w-44"
-              />
-            </span>
+              <span>
+                <img
+                  src="images/home/smart-logo1.png"
+                  alt="Smart Grader Logo"
+                  className="cursor-pointer w-28 md:w-32 lg:w-44"
+                />
+              </span>
             </Link>
-          
           </div>
 
           <nav className="hidden lg:flex w-full space-x-4 lg:space-x-6 justify-center items-center">
             <Link href="/">
-            <span 
-            >
-              <span className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 cursor-pointer">
-                Home
+              <span>
+                <span className="text-gray-500 hover:text-blue-700 transition duration-300 cursor-pointer">
+                  Home
+                </span>
               </span>
-            </span>
             </Link>
-          
+
             <Link
               href="https://chatgpt.com/g/g-QcBTxz9bF-smartgrader-assistant"
               passHref
             >
-              <span className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 cursor-pointer">
+              <span className="text-gray-500 hover:text-blue-700 transition duration-300 cursor-pointer">
                 Chat with our docs
               </span>
             </Link>
 
             <Link href="https://discord.com/invite/mQeEsStC" passHref>
-              <span className="text-gray-900 hover:text-blue-700 transition font-spline duration-300 cursor-pointer">
+              <span className="text-gray-500 hover:text-blue-700 transition duration-300 cursor-pointer">
                 Join our Discord
               </span>
             </Link>
+
             <span
-              className="text-gray-900 hover:text-blue-700 transition font-spline duration-300 cursor-pointer"
+              className="text-gray-500 hover:text-blue-700 transition duration-300 cursor-pointer"
               onClick={() => setDemo(true)}
             >
               Get Demo
             </span>
-           <Link  href="/blog"   passHref>
-           <div>
-            <span className="text-gray-900 flex  gap-2 justify-center items-center hover:text-blue-700 transition duration-300 cursor-pointer">
-              <span>Blog</span>{" "}
-              <span>
-                <MdArrowOutward size={20} />
-              </span>
-            </span>
-          </div>
-           </Link>
-           
+
+            <Link href="/blog" passHref>
+              <div>
+                <span className="text-gray-500 flex gap-2 justify-center items-center hover:text-blue-700 transition duration-300 cursor-pointer">
+                  <span>Blog</span>{" "}
+                  <span>
+                    <MdArrowOutward size={20} />
+                  </span>
+                </span>
+              </div>
+            </Link>
           </nav>
 
           <div className="hidden lg:flex flex-row basis-1/4 space-x-6 justify-end items-center">
@@ -98,8 +95,8 @@ const Navbar = () => {
                   "http://app.smartgrader.in/signIn")
               }
             >
-              <span className="text-sky-500 hover:text-blue-700 font-spline transition duration-300 flex items-center cursor-pointer">
-                <FaSignInAlt className="mr-2" /> sign In
+              <span className="text-gray-500 hover:text-gray-700 transition border border-gray-500 px-4 py-2 hover:scale-105 rounded duration-300 flex items-center cursor-pointer">
+                 <FaSignInAlt className="mr-2" /> Login 
               </span>
             </div>
             <div
@@ -108,7 +105,7 @@ const Navbar = () => {
                   "http://app.smartgrader.in/createAccount")
               }
             >
-              <span className="bg-[#01AFF4] text-white px-4 py-2 font-spline rounded hover:bg-blue-500 transition duration-300 flex items-center cursor-pointer">
+              <span className="bg-[#01AFF4] text-white px-4 py-2 rounded hover:bg-blue-500 hover:scale-105 transition duration-300 flex items-center cursor-pointer">
                 <FaUser className="mr-2" /> Signup
               </span>
             </div>
@@ -145,3 +142,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

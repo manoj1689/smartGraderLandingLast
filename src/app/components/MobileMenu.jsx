@@ -17,34 +17,34 @@ const MobileMenu = () => {
   return (
     <>
       <Demo open={demo} onClose={handleClose} />
-      <nav className="lg:hidden shadow-md absolute w-full top-full left-0 bg-blue-100">
+      <nav className="lg:hidden shadow-md absolute w-full top-full left-0 border-t border-gray-300 bg-white">
         <div className="flex flex-col max-h-[calc(100vh-110px)]">
           <ul className="flex-grow flex flex-col py-5 mb-4 space-y-2 overflow-y-auto">
             <li className="flex justify-center">
               <span
                 onClick={() => router.push("/")}
-                className="text-gray-900 hover:text-blue-700 font-spline transition duration-300 cursor-pointer"
+                className="text-gray-500 hover:text-blue-700 font-spline transition duration-300 cursor-pointer"
               >
                 Home
               </span>
             </li>
             <li className="flex justify-center">
               <Link href="https://chatgpt.com/g/g-QcBTxz9bF-smartgrader-assistant">
-                <span className="text-gray-900 hover:text-blue-700 font-spline transition duration-300">
+                <span className="text-gray-500 hover:text-blue-700 font-spline transition duration-300">
                   Chat with our docs
                 </span>
               </Link>
             </li>
             <li className="flex justify-center">
               <Link href="https://discord.com/invite/mQeEsStC">
-                <span className="text-gray-900 hover:text-blue-700 transition font-spline duration-300">
+                <span className="text-gray-500 hover:text-blue-700 transition font-spline duration-300">
                   Join our Discord
                 </span>
               </Link>
             </li>
             <li className="flex justify-center">
               <span
-                className="text-gray-900 hover:text-blue-700 transition font-spline duration-300 cursor-pointer"
+                className="text-gray-500 hover:text-blue-700 transition font-spline duration-300 cursor-pointer"
                 onClick={() => setDemo(true)}
               >
                 Get Demo
@@ -53,7 +53,7 @@ const MobileMenu = () => {
             <li className="flex justify-center">
               <span
                 onClick={() => router.push("/blog")}
-                className="text-gray-900 flex gap-2 items-center hover:text-blue-700 transition duration-300 cursor-pointer"
+                className="text-gray-500 flex gap-2 items-center hover:text-blue-700 transition duration-300 cursor-pointer"
               >
                 <span>Blog</span>
                 <span>
