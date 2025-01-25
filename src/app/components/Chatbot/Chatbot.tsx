@@ -73,8 +73,7 @@ const Chatbot = () => {
       {isChatOpen && (
         <div  className="fixed bottom-[90px] sm:bottom-[10px] lg:bottom-[90px] z-50 max-sm:right-4 sm:right-28 lg:right-12 max-w-96 max-h-96 max-sm:max-h-[calc(100vh-80px)] sm:max-h-[calc(100vh-60px)]  lg:max-h-[calc(100vh-120px)] h-96 border   rounded-lg shadow-lg flex flex-col overflow-hidden">
           <div className="p-3 bg-blue-500 text-white">
-            <h6>Welcome,</h6>
-            <h4 className="text-lg font-bold">Hi, I'm Your Smart AI Assistant</h4>
+            <h4 className="text-lg font-bold">Smart AI Assistant</h4>
           </div>
 
           {/* Chat message area */}
